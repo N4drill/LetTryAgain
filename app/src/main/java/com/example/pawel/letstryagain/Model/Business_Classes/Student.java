@@ -1,4 +1,6 @@
-package com.example.pawel.letstryagain.Model;
+package com.example.pawel.letstryagain.Model.Business_Classes;
+
+import java.util.ArrayList;
 
 /**
  * Created by Paweł on 18.01.2018.
@@ -13,6 +15,8 @@ public class Student {
     private String kierunek;
     private String drugie_imie;
     private String email;
+    private ArrayList<Podanie> uczestnik_podania_ArrayList = new ArrayList<>();
+    private ArrayList<Podanie> organizowane_podania_ArrayList = new ArrayList<>();
 
     public Student(String imie, String nazwisko, int nr_indeksu, int semestr, String wydzial, String kierunek, String email) {
         this.imie = imie;
@@ -21,17 +25,6 @@ public class Student {
         this.semestr = semestr;
         this.wydzial = wydzial;
         this.kierunek = kierunek;
-        this.email=email;
-    }
-
-    public Student(String imie, String nazwisko, int nr_indeksu, int semestr, String wydzial, String kierunek, String drugie_imie, String email) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.nr_indeksu = nr_indeksu;
-        this.semestr = semestr;
-        this.wydzial = wydzial;
-        this.kierunek = kierunek;
-        this.drugie_imie = drugie_imie;
         this.email = email;
     }
 
@@ -97,6 +90,22 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public ArrayList<Podanie> getUczestnik_podania_ArrayList() {
+        return uczestnik_podania_ArrayList;
+    }
+
+    public void setUczestnik_podania_ArrayList(ArrayList<Podanie> uczestnik_podania_ArrayList) {
+        this.uczestnik_podania_ArrayList = uczestnik_podania_ArrayList;
+    }
+
+    public ArrayList<Podanie> getOrganizowane_podania_ArrayList() {
+        return organizowane_podania_ArrayList;
+    }
+
+    public void setOrganizowane_podania_ArrayList(ArrayList<Podanie> organizowane_podania_ArrayList) {
+        this.organizowane_podania_ArrayList = organizowane_podania_ArrayList;
     }
 }
 

@@ -1,4 +1,6 @@
-package com.example.pawel.letstryagain.Model;
+package com.example.pawel.letstryagain.Model.Business_Classes;
+
+import java.util.ArrayList;
 
 /**
  * Created by Paweł on 18.01.2018.
@@ -10,13 +12,15 @@ public class Prowadzacy {
     private String nazwisko;
     private int numer_pracownika;
     private String tytul_naukowy;
+    private ArrayList<Podanie> kursy_prowadzone_ArrayList;
 
-    public Prowadzacy(int pensum, String imie, String nazwisko, int numer_pracownika, String tytul_naukowy) {
+    public Prowadzacy(int pensum, String imie, String nazwisko, int numer_pracownika, String tytul_naukowy, ArrayList<Podanie> kursy_prowadzone_ArrayList) {
         this.pensum = pensum;
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.numer_pracownika = numer_pracownika;
         this.tytul_naukowy = tytul_naukowy;
+        this.kursy_prowadzone_ArrayList = kursy_prowadzone_ArrayList;
     }
 
     public int getPensum() {
@@ -57,5 +61,14 @@ public class Prowadzacy {
 
     public void setTytul_naukowy(String tytul_naukowy) {
         this.tytul_naukowy = tytul_naukowy;
+    }
+
+
+    public ArrayList<Podanie> getKursy_prowadzone() {
+        return kursy_prowadzone_ArrayList;
+    }
+
+    public void setKursy_prowadzone(ArrayList<Podanie> kursy_prowadzone) {
+        this.kursy_prowadzone_ArrayList = kursy_prowadzone;
     }
 }
