@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LetsTryAgain</string>
+    <string name="sprawy_button_text">Sprawy</string>
+    <string name="przegladaj_prowadzacych_button_text">Przegladaj prowadzacych</string>
+    <string name="przegladaj_sale_button_text">Przegladaj sale</string>
+    <string name="o_autorze_button_text">O Autorze</string>
 </resources>
