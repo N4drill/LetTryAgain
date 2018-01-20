@@ -10,47 +10,47 @@
 
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/Table_fragment_tytul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tytul"
+            android:text="@string/tytul_table_column"
             android:gravity="center_horizontal"
             android:background="@drawable/background_border"
             />
 
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/Table_fragment_imie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Imie"
+            android:text="@string/imie_table_column"
             android:gravity="center_horizontal"
             android:background="@drawable/background_border"
             />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/Table_fragment_nazwisko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nazwisko"
+            android:text="@string/nazwisko_table_column"
             android:gravity="center_horizontal"
             android:background="@drawable/background_border"
             />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/Table_fragment_katedra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Katedra"
+            android:text="@string/katedra_table_column"
             android:gravity="center_horizontal"
             android:background="@drawable/background_border"
             />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/Table_fragment_kurs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kurs"
+            android:text="@string/kurs_table_column"
             android:gravity="center_horizontal"
             android:background="@drawable/background_border"
            />

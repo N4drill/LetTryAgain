@@ -19,7 +19,7 @@
         <activity android:name=".Views.Professors_Table_Activity" />
         <activity android:name=".Views.Application_List_Activity" />
         <activity android:name=".Views.Application_Form_Activity" />
-        <activity android:name=".Views.Application_Form_ReadyToPrint"></activity>
+        <activity android:name=".Views.Application_Form_ReadyToPrint" />
     </application>
 
 </manifest>

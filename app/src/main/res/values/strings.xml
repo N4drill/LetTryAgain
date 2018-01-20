@@ -8,4 +8,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search_bar_default_text">Wyszukaj...</string>
+    <string name="tytul_table_column">Tytul</string>
+    <string name="imie_table_column">Imie</string>
+    <string name="nazwisko_table_column">Nazwisko</string>
+    <string name="katedra_table_column">Katedra</string>
+    <string name="kurs_table_column">Kurs</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

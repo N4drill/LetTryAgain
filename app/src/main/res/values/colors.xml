@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="borderColor">#000</color>
+    <color name="application_list_bck">#5d8fe6</color>
 </resources>

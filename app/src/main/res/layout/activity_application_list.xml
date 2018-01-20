@@ -4,6 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.pawel.letstryagain.Views.Application_List_Activity">
+    tools:context="com.example.pawel.letstryagain.Views.Application_List_Activity"
+    >
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="W trakcie"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/Application_list"
+        android:name="com.example.pawel.letstryagain.Views.Application_List_Fragments.Application_List_ListView_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="368dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout="@layout/fragment_application_list_list_view" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Add_new_application_button"
+        android:layout_width="124dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginRight="28dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+         />
 </android.support.constraint.ConstraintLayout>
