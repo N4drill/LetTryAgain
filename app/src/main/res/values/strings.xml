@@ -4,4 +4,8 @@
     <string name="przegladaj_prowadzacych_button_text">Przegladaj prowadzacych</string>
     <string name="przegladaj_sale_button_text">Przegladaj sale</string>
     <string name="o_autorze_button_text">O Autorze</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_bar_default_text">Wyszukaj...</string>
 </resources>

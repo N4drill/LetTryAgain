@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context="com.example.pawel.letstryagain.Views.Professors_Table_Activity">
 
+    <fragment
+        android:id="@+id/search_bar_fragment"
+        android:name="com.example.pawel.letstryagain.Views.Professors_Table_Fragments.Professors_Table_SearchView_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_professors_table_search_view" />
+
+    <Spinner
+        android:id="@+id/spinner_bar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar_fragment"
+        android:tooltipText="Wyszukaj w..."
+
+       />
+
+    <fragment
+        android:id="@+id/table_fragment"
+        android:name="com.example.pawel.letstryagain.Views.Professors_Table_Fragments.Professors_Table_TableView_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_bar"
+        tools:layout="@layout/fragment_professors_table_table_view" />
 </android.support.constraint.ConstraintLayout>

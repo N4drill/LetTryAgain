@@ -1,0 +1,15 @@
+<SearchView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pawel.letstryagain.Views.Professors_Table_Fragments.Professors_Table_SearchView_Fragment"
+    android:queryHint="@string/search_bar_default_text"
+    android:iconifiedByDefault="false"
+
+
+    >
+
+
+
+
+</SearchView>
