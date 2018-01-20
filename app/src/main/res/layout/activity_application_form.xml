@@ -6,4 +6,227 @@
     android:layout_height="match_parent"
     tools:context="com.example.pawel.letstryagain.Views.Application_Form_Activity">
 
+    <TextView
+        android:id="@+id/Title_Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Wprowadz poprawne dane podania"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Imie_Form"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Imie prowadzacego"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Imie_Form_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_Form"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/Nazwisko_Form"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Naziwsko prowadzacego"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Nazwisko_Form_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Imie_Form"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/Budynek_Form"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Budynek"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Budynek_Form_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nazwisko_Form"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/Sala_Form"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sala"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Sala_Form_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Budynek_Form"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/Data_Form"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Dzien Tygodnia"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Data_Form_Spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sala_Form"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/Godzina_Form"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Godzina"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Godzina_Form_Spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Data_Form"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/Imie_Form_Text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_Form" />
+
+    <EditText
+        android:id="@+id/Nazwisko_Form_Text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Imie_Form_Text" />
+
+    <EditText
+        android:id="@+id/Budynek_Form_Text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nazwisko_Form_Text" />
+
+    <EditText
+        android:id="@+id/Sala_Form_Text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Budynek_Form_Text" />
+
+    <Button
+        android:id="@+id/Next_Form_Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Dalej"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Screen_Form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Dodaj potwierdzenie prowadzego"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Next_Form_Button"
+        app:layout_constraintEnd_toStartOf="@+id/Screen_Form_FButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Godzina_Form"
+        app:layout_constraintVertical_bias="0.545"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Screen_Form_FButton"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/Next_Form_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Godzina_Form_Spinner"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginRight="24dp" />
+
+    <Spinner
+        android:id="@+id/Data_Form_Spinner"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sala_Form_Text"
+        android:layout_marginRight="8dp" />
+
+    <Spinner
+        android:id="@+id/Godzina_Form_Spinner"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Data_Form_Spinner"
+        android:layout_marginRight="8dp" />
+
 </android.support.constraint.ConstraintLayout>

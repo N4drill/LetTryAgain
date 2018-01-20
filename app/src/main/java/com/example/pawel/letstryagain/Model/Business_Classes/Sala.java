@@ -10,12 +10,14 @@ public class Sala {
 
     private int godzinaZajec;
     private String budynek;
+    private int sala;
     private ArrayList<Podanie> podania_rezerwujace_ArrayList = new ArrayList<>();
 
 
-    public Sala(int godzinaZajec, String budynek) {
+    public Sala(int godzinaZajec, String budynek, int sala) {
         this.godzinaZajec = godzinaZajec;
         this.budynek = budynek;
+        this.sala= sala;
     }
 
     public int getGodzinaZajec() {
@@ -36,6 +38,14 @@ public class Sala {
 
     public ArrayList<Podanie> getPodania_rezerwujace_ArrayList() {
         return podania_rezerwujace_ArrayList;
+    }
+
+    public int getSala() {
+        return sala;
+    }
+
+    public void setSala(int sala) {
+        this.sala = sala;
     }
 
     public void setPodania_rezerwujace_ArrayList(ArrayList<Podanie> podania_rezerwujace_ArrayList) {
