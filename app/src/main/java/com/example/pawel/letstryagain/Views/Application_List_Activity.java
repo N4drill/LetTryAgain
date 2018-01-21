@@ -24,6 +24,11 @@ public class Application_List_Activity extends AppCompatActivity {
 
     @OnClick(R.id.Add_new_application_button)
     public void add_new_application_click(View view){
-        list_presenter.onButtonClick(this,Application_Form_Activity.class);
+        list_presenter.onButtonClick(this,Application_Form_Activity.class, "Nowe podanie");
+    }
+
+    @Override
+    public void onBackPressed() {
+        list_presenter.onButtonClick(this, MainActivity.class);
     }
 }

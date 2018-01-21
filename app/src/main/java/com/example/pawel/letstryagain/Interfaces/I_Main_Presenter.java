@@ -8,4 +8,6 @@ import android.content.Context;
 
 public interface I_Main_Presenter {
     void onButtonClick(Context self, Class destination);
+    void onButtonClick(Context self, Class destination, String message);
+    void close_application(Context self);
 }

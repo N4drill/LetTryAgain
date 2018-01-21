@@ -8,4 +8,5 @@ import android.content.Context;
 
 public interface I_Application_List_Presenter {
     void onButtonClick(Context self, Class destination);
+    void onButtonClick(Context self, Class destination, String message);
 }

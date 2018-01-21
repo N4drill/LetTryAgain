@@ -40,13 +40,17 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.Przegladaj_prowadzacych_button)
     public void przegladaj_prowadzacych_button_click(View view)
     {
-        main_presenter.onButtonClick(this, Professors_Table_Activity.class);
+        main_presenter.onButtonClick(this, Professors_Table_Activity.class, "Lista prowadzacych");
     }
 
     @OnClick(R.id.Sprawy_button)
     public void sprawy_button_click(View view)
     {
-        main_presenter.onButtonClick(this, Application_List_Activity.class);
+        main_presenter.onButtonClick(this, Application_List_Activity.class, "Aktualne podania");
     }
 
+    @Override
+    public void onBackPressed() {
+        main_presenter.close_application(this);
+    }
 }
