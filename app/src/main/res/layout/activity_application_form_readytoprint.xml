@@ -8,15 +8,14 @@
 
     <TextView
         android:id="@+id/Data_Form_Print"
-        android:layout_width="72dp"
+        android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:text="Data, ...."
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="8dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Title_Form_Print"
@@ -145,7 +144,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:textAlignment="center"
-        android:text="W imieniu grupy studentow, podpisanych pod zalaczona do wniosku lista prosimy o utworzenie kursu poprawkowego na podstawie wyzej wymienionych danych. W zalacznikach dostarczone sa informacje ktore byly potrzebne w procesie otwierdania kursu"
+        android:text="W imieniu grupy studentow, podpisanych pod
+        zalaczona do wniosku lista prosimy o utworzenie kursu poprawkowego
+        na podstawie wyzej wymienionych danych. W zalacznikach dostarczone sa informacje ktore byly potrzebne w procesie otwierania kursu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fill_Sala_Form_Print" />

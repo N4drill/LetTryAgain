@@ -12,15 +12,37 @@ public class Prowadzacy {
     private String nazwisko;
     private int numer_pracownika;
     private String tytul_naukowy;
-    private ArrayList<Podanie> kursy_prowadzone_ArrayList;
+    private String katedra;
+    private Kurs kurs;
+    private ArrayList<Kurs> kursy_prowadzone_ArrayList;
 
-    public Prowadzacy(int pensum, String imie, String nazwisko, int numer_pracownika, String tytul_naukowy, ArrayList<Podanie> kursy_prowadzone_ArrayList) {
+    public Prowadzacy(int pensum, String imie, String nazwisko, int numer_pracownika, String tytul_naukowy, String katedra) {
+        this.pensum = pensum;
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.numer_pracownika = numer_pracownika;
+        this.tytul_naukowy = tytul_naukowy;
+        this.kursy_prowadzone_ArrayList = new ArrayList<>();
+        this.katedra=katedra;
+    }
+
+    public Prowadzacy(int pensum, String imie, String nazwisko, int numer_pracownika, String tytul_naukowy, String katedra, ArrayList<Kurs> kursy_prowadzone_ArrayList) {
         this.pensum = pensum;
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.numer_pracownika = numer_pracownika;
         this.tytul_naukowy = tytul_naukowy;
         this.kursy_prowadzone_ArrayList = kursy_prowadzone_ArrayList;
+        this.katedra=katedra;
+    }
+
+    // konstruktor potrzebny do arraylisty wyswietlanej
+    public Prowadzacy(String imie, String nazwisko, String tytul_naukowy, String katedra, Kurs kurs) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.tytul_naukowy = tytul_naukowy;
+        this.katedra = katedra;
+        this.kurs = kurs;
     }
 
     public int getPensum() {
@@ -63,12 +85,27 @@ public class Prowadzacy {
         this.tytul_naukowy = tytul_naukowy;
     }
 
+    public String getKatedra() {
+        return katedra;
+    }
 
-    public ArrayList<Podanie> getKursy_prowadzone() {
+    public void setKatedra(String katedra) {
+        this.katedra = katedra;
+    }
+
+    public ArrayList<Kurs> getKursy_prowadzone_ArrayList() {
         return kursy_prowadzone_ArrayList;
     }
 
-    public void setKursy_prowadzone(ArrayList<Podanie> kursy_prowadzone) {
-        this.kursy_prowadzone_ArrayList = kursy_prowadzone;
+    public void setKursy_prowadzone_ArrayList(ArrayList<Kurs> kursy_prowadzone_ArrayList) {
+        this.kursy_prowadzone_ArrayList = kursy_prowadzone_ArrayList;
+    }
+
+    public Kurs getKurs() {
+        return kurs;
+    }
+
+    public void setKurs(Kurs kurs) {
+        this.kurs = kurs;
     }
 }

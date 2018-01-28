@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+
+    <TextView
+        android:id="@+id/tytul_textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20.0"
+        android:text="@string/tytul_table_column"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/imie_textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20.0"
+        android:text="@string/imie_table_column"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nazwisko_textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20.0"
+        android:text="@string/nazwisko_table_column"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/katedra_textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20.0"
+        android:text="@string/katedra_table_column"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/kurs_textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20.0"
+        android:text="@string/kurs_table_column"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

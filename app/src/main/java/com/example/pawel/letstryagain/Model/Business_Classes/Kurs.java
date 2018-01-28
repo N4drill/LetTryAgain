@@ -8,16 +8,18 @@ import java.util.ArrayList;
 
 public class Kurs {
     private float liczbaGodz;
+    private String nazwa_kursu;
     private int ECTS;
     private int kod_kursu;
     private ArrayList<Podanie> podania_o_powtorke_ArrayList = new ArrayList<>();
     private ArrayList<Prowadzacy> prowadzacyKurs_ArrayList = new ArrayList<>();
 
 
-    public Kurs(float liczbaGodz, int ECTS, int kod_kursu) {
+    public Kurs(String nazwa_kursu, float liczbaGodz, int ECTS, int kod_kursu) {
         this.liczbaGodz = liczbaGodz;
         this.ECTS = ECTS;
         this.kod_kursu = kod_kursu;
+        this.nazwa_kursu= nazwa_kursu;
     }
 
     public float getLiczbaGodz() {
@@ -50,6 +52,14 @@ public class Kurs {
 
     public void setPodania_o_powtorke_ArrayList(ArrayList<Podanie> podania_o_powtorke_ArrayList) {
         this.podania_o_powtorke_ArrayList = podania_o_powtorke_ArrayList;
+    }
+
+    public String getNazwa_kursu() {
+        return nazwa_kursu;
+    }
+
+    public void setNazwa_kursu(String nazwa_kursu) {
+        this.nazwa_kursu = nazwa_kursu;
     }
 
     public ArrayList<Prowadzacy> getProwadzacyKurs_ArrayList() {
