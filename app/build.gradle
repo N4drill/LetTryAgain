@@ -1,4 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'jdepend'
+
+task jdepend(type: JDepend, dependsOn: 'compileDebugSources') {
+    classesDir file('build/intermediates/classes/debug/com/example/pawel/letstryagain')
+    reports {
+        xml {
+            destination 'build/reports/jdepend.xml'
+        }
+    }
+}
 
 android {
     compileSdkVersion 26
